@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Optional: Uncomment if you want to keep GIFs out of version control
+# (Not recommended - you want these in the repo for GitHub Pages)
+# assets/**/*.gif
+# assets/**/*.mp4
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+
+# Environment files (if you add any)
+.env
+.env.local
+.env.*.local
