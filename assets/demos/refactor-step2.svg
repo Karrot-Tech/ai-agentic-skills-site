@@ -1,0 +1,99 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#1e1e1e"/>
+
+  <!-- Main Title -->
+  <text x="40" y="50" font-family="sans-serif" font-size="24" fill="#3b82f6" font-weight="bold">Step 2: Planning Refactoring Strategy</text>
+  <text x="40" y="80" font-family="sans-serif" font-size="14" fill="#858585">Generating refactoring plan with dependency analysis...</text>
+
+  <!-- Strategy Panel (Left) -->
+  <rect x="30" y="110" width="550" height="530" rx="12" fill="#252526" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="45" y="140" font-family="sans-serif" font-size="15" fill="#cccccc" font-weight="bold">📋 Refactoring Strategy</text>
+
+  <!-- Strategy Item 1 -->
+  <rect x="45" y="165" width="520" height="90" rx="8" fill="#1e1e1e" stroke="#3b82f6" stroke-width="1"/>
+  <text x="60" y="190" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">1. Extract Common Validation Pattern</text>
+  <text x="60" y="210" font-family="sans-serif" font-size="11" fill="#cccccc">Create shared validation utility function</text>
+  <text x="60" y="228" font-family="sans-serif" font-size="10" fill="#858585">Impact: 8 files</text>
+  <text x="60" y="243" font-family="sans-serif" font-size="10" fill="#10b981">✓ Safe - no breaking changes</text>
+
+  <!-- Strategy Item 2 -->
+  <rect x="45" y="270" width="520" height="90" rx="8" fill="#1e1e1e" stroke="#3b82f6" stroke-width="1"/>
+  <text x="60" y="295" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">2. Consolidate Error Handling</text>
+  <text x="60" y="315" font-family="sans-serif" font-size="11" fill="#cccccc">Unified error handler for consistent behavior</text>
+  <text x="60" y="333" font-family="sans-serif" font-size="10" fill="#858585">Impact: 5 files</text>
+  <text x="60" y="348" font-family="sans-serif" font-size="10" fill="#10b981">✓ Backwards compatible</text>
+
+  <!-- Strategy Item 3 -->
+  <rect x="45" y="375" width="520" height="90" rx="8" fill="#1e1e1e" stroke="#3b82f6" stroke-width="1"/>
+  <text x="60" y="400" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">3. Remove Dead Code</text>
+  <text x="60" y="420" font-family="sans-serif" font-size="11" fill="#cccccc">Eliminate unused utility functions</text>
+  <text x="60" y="438" font-family="sans-serif" font-size="10" fill="#858585">Impact: 3 files</text>
+  <text x="60" y="453" font-family="sans-serif" font-size="10" fill="#10b981">✓ No dependencies</text>
+
+  <!-- Strategy Item 4 -->
+  <rect x="45" y="480" width="520" height="90" rx="8" fill="#1e1e1e" stroke="#3b82f6" stroke-width="1"/>
+  <text x="60" y="505" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">4. Update Import Statements</text>
+  <text x="60" y="525" font-family="sans-serif" font-size="11" fill="#cccccc">Refactor imports to use new utilities</text>
+  <text x="60" y="543" font-family="sans-serif" font-size="10" fill="#858585">Impact: 8 files</text>
+  <text x="60" y="558" font-family="sans-serif" font-size="10" fill="#10b981">✓ Auto-fixable</text>
+
+  <!-- Dependency Graph (Right) -->
+  <rect x="620" y="110" width="550" height="530" rx="12" fill="#252526" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="635" y="140" font-family="sans-serif" font-size="15" fill="#cccccc" font-weight="bold">🔗 Dependency Graph</text>
+
+  <!-- Graph nodes and connections -->
+  <!-- Core utility (center) -->
+  <rect x="825" y="200" width="140" height="50" rx="8" fill="#3b82f6" stroke="#60a5fa" stroke-width="2"/>
+  <text x="840" y="225" font-family="sans-serif" font-size="12" fill="white" font-weight="bold">core/validate.js</text>
+  <text x="860" y="242" font-family="sans-serif" font-size="10" fill="white">(new utility)</text>
+
+  <!-- Dependent files -->
+  <rect x="660" y="310" width="130" height="40" rx="6" fill="#2d2d30" stroke="#858585" stroke-width="1"/>
+  <text x="675" y="335" font-family="monospace" font-size="10" fill="#9cdcfe">helpers.js</text>
+
+  <rect x="830" y="310" width="130" height="40" rx="6" fill="#2d2d30" stroke="#858585" stroke-width="1"/>
+  <text x="840" y="335" font-family="monospace" font-size="10" fill="#9cdcfe">validators.js</text>
+
+  <rect x="1000" y="310" width="130" height="40" rx="6" fill="#2d2d30" stroke="#858585" stroke-width="1"/>
+  <text x="1010" y="335" font-family="monospace" font-size="10" fill="#9cdcfe">formatters.js</text>
+
+  <!-- Connection lines -->
+  <line x1="895" y1="250" x2="725" y2="310" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="895" y1="250" x2="895" y2="310" stroke="#3b82f6" stroke-width="2"/>
+  <line x1="895" y1="250" x2="1065" y2="310" stroke="#3b82f6" stroke-width="2"/>
+
+  <!-- Component files (bottom row) -->
+  <rect x="660" y="390" width="115" height="35" rx="6" fill="#2d2d30" stroke="#858585" stroke-width="1"/>
+  <text x="675" y="413" font-family="monospace" font-size="9" fill="#9cdcfe">Form.js</text>
+
+  <rect x="800" y="390" width="115" height="35" rx="6" fill="#2d2d30" stroke="#858585" stroke-width="1"/>
+  <text x="815" y="413" font-family="monospace" font-size="9" fill="#9cdcfe">Input.js</text>
+
+  <rect x="940" y="390" width="115" height="35" rx="6" fill="#2d2d30" stroke="#858585" stroke-width="1"/>
+  <text x="955" y="413" font-family="monospace" font-size="9" fill="#9cdcfe">api.js</text>
+
+  <!-- Connection lines from utils to components -->
+  <line x1="725" y1="350" x2="717" y2="390" stroke="#858585" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="895" y1="350" x2="857" y2="390" stroke="#858585" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="1065" y1="350" x2="997" y2="390" stroke="#858585" stroke-width="1" stroke-dasharray="3,3"/>
+
+  <!-- Metrics Box -->
+  <rect x="660" y="470" width="470" height="150" rx="8" fill="#1e1e1e" stroke="#10b981" stroke-width="2"/>
+  <text x="675" y="500" font-family="sans-serif" font-size="14" fill="#10b981" font-weight="bold">✓ Plan Validated</text>
+
+  <text x="675" y="530" font-family="sans-serif" font-size="11" fill="#cccccc">Estimated impact:</text>
+  <text x="675" y="550" font-family="sans-serif" font-size="11" fill="#858585">• Lines removed:</text>
+  <text x="820" y="550" font-family="sans-serif" font-size="11" fill="#10b981">~240</text>
+  <text x="675" y="570" font-family="sans-serif" font-size="11" fill="#858585">• Duplication reduction:</text>
+  <text x="870" y="570" font-family="sans-serif" font-size="11" fill="#10b981">40%</text>
+  <text x="675" y="590" font-family="sans-serif" font-size="11" fill="#858585">• Breaking changes:</text>
+  <text x="845" y="590" font-family="sans-serif" font-size="11" fill="#10b981">0</text>
+  <text x="675" y="610" font-family="sans-serif" font-size="11" fill="#858585">• Test coverage:</text>
+  <text x="825" y="610" font-family="sans-serif" font-size="11" fill="#10b981">Maintained at 92%</text>
+
+  <!-- Progress indicator -->
+  <rect x="30" y="650" width="1140" height="6" rx="3" fill="#3a3a3a"/>
+  <rect x="30" y="650" width="456" height="6" rx="3" fill="#3b82f6"/>
+  <text x="550" y="668" font-family="sans-serif" font-size="11" fill="#858585">Step 2 of 5</text>
+</svg>

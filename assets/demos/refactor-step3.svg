@@ -1,0 +1,149 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#1e1e1e"/>
+
+  <!-- Main Title -->
+  <text x="40" y="50" font-family="sans-serif" font-size="24" fill="#3b82f6" font-weight="bold">Step 3: Refactoring Execution</text>
+  <text x="40" y="80" font-family="sans-serif" font-size="14" fill="#858585">Making changes while preserving functionality...</text>
+
+  <!-- Activity Log (Left) -->
+  <rect x="30" y="110" width="380" height="530" rx="12" fill="#252526" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="45" y="140" font-family="sans-serif" font-size="14" fill="#cccccc" font-weight="bold">📝 Activity Log</text>
+
+  <!-- Log entries -->
+  <text x="45" y="175" font-family="monospace" font-size="10" fill="#10b981">✓</text>
+  <text x="60" y="175" font-family="monospace" font-size="10" fill="#cccccc">Created core/validate.js</text>
+  <text x="280" y="175" font-family="monospace" font-size="9" fill="#858585">12:34:01</text>
+
+  <text x="45" y="200" font-family="monospace" font-size="10" fill="#10b981">✓</text>
+  <text x="60" y="200" font-family="monospace" font-size="10" fill="#cccccc">Extracted validation logic</text>
+  <text x="280" y="200" font-family="monospace" font-size="9" fill="#858585">12:34:02</text>
+
+  <text x="45" y="225" font-family="monospace" font-size="10" fill="#10b981">✓</text>
+  <text x="60" y="225" font-family="monospace" font-size="10" fill="#cccccc">Updated helpers.js</text>
+  <text x="280" y="225" font-family="monospace" font-size="9" fill="#858585">12:34:03</text>
+
+  <text x="45" y="250" font-family="monospace" font-size="10" fill="#10b981">✓</text>
+  <text x="60" y="250" font-family="monospace" font-size="10" fill="#cccccc">Updated validators.js</text>
+  <text x="280" y="250" font-family="monospace" font-size="9" fill="#858585">12:34:04</text>
+
+  <text x="45" y="275" font-family="monospace" font-size="10" fill="#10b981">✓</text>
+  <text x="60" y="275" font-family="monospace" font-size="10" fill="#cccccc">Updated formatters.js</text>
+  <text x="280" y="275" font-family="monospace" font-size="9" fill="#858585">12:34:05</text>
+
+  <text x="45" y="300" font-family="monospace" font-size="10" fill="#3b82f6">→</text>
+  <text x="60" y="300" font-family="monospace" font-size="10" fill="#3b82f6">Refactoring Form.js...</text>
+  <text x="280" y="300" font-family="monospace" font-size="9" fill="#858585">12:34:06</text>
+
+  <text x="45" y="325" font-family="monospace" font-size="10" fill="#858585">⋯</text>
+  <text x="60" y="325" font-family="monospace" font-size="10" fill="#858585">Pending: Input.js</text>
+
+  <text x="45" y="350" font-family="monospace" font-size="10" fill="#858585">⋯</text>
+  <text x="60" y="350" font-family="monospace" font-size="10" fill="#858585">Pending: Button.js</text>
+
+  <text x="45" y="375" font-family="monospace" font-size="10" fill="#858585">⋯</text>
+  <text x="60" y="375" font-family="monospace" font-size="10" fill="#858585">Pending: api.js</text>
+
+  <!-- Stats box -->
+  <rect x="45" y="410" width="345" height="210" rx="8" fill="#1e1e1e" stroke="#3b82f6" stroke-width="1"/>
+  <text x="60" y="440" font-family="sans-serif" font-size="13" fill="#3b82f6" font-weight="bold">Progress Statistics</text>
+
+  <text x="60" y="470" font-family="sans-serif" font-size="11" fill="#cccccc">Files modified:</text>
+  <text x="200" y="470" font-family="sans-serif" font-size="11" fill="#10b981">5 / 8</text>
+
+  <rect x="60" y="480" width="310" height="12" rx="6" fill="#3a3a3a"/>
+  <rect x="60" y="480" width="194" height="12" rx="6" fill="#10b981"/>
+
+  <text x="60" y="515" font-family="sans-serif" font-size="11" fill="#cccccc">Lines changed:</text>
+  <text x="200" y="515" font-family="sans-serif" font-size="11" fill="#3b82f6">+128 / -312</text>
+
+  <text x="60" y="540" font-family="sans-serif" font-size="11" fill="#cccccc">Imports updated:</text>
+  <text x="200" y="540" font-family="sans-serif" font-size="11" fill="#10b981">23</text>
+
+  <text x="60" y="565" font-family="sans-serif" font-size="11" fill="#cccccc">Dead code removed:</text>
+  <text x="230" y="565" font-family="sans-serif" font-size="11" fill="#10b981">184 lines</text>
+
+  <text x="60" y="595" font-family="sans-serif" font-size="10" fill="#858585">Estimated time remaining:</text>
+  <text x="250" y="595" font-family="sans-serif" font-size="10" fill="#858585">~8 seconds</text>
+
+  <!-- Code diff view (Right) -->
+  <rect x="440" y="110" width="730" height="530" rx="12" fill="#252526" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="455" y="140" font-family="sans-serif" font-size="14" fill="#cccccc" font-weight="bold">📄 Form.js - Changes</text>
+
+  <!-- Diff header -->
+  <rect x="455" y="155" width="700" height="25" fill="#2d2d30"/>
+  <text x="470" y="172" font-family="monospace" font-size="10" fill="#ff5f56">--- before</text>
+  <text x="600" y="172" font-family="monospace" font-size="10" fill="#10b981">+++ after</text>
+
+  <!-- Code diff -->
+  <text x="470" y="205" font-family="monospace" font-size="11" fill="#858585">import</text>
+  <text x="520" y="205" font-family="monospace" font-size="11" fill="#cccccc">{ useState } from</text>
+  <text x="700" y="205" font-family="monospace" font-size="11" fill="#ce9178">'react'</text>
+  <text x="762" y="205" font-family="monospace" font-size="11" fill="#cccccc">;</text>
+
+  <!-- Removed lines -->
+  <rect x="455" y="215" width="700" height="120" fill="#4d1f1f20"/>
+  <text x="465" y="230" font-family="monospace" font-size="11" fill="#ff5f56">-</text>
+  <text x="480" y="230" font-family="monospace" font-size="11" fill="#cccccc">import { validateEmail } from</text>
+  <text x="745" y="230" font-family="monospace" font-size="11" fill="#ce9178">'./utils/helpers'</text>
+  <text x="907" y="230" font-family="monospace" font-size="11" fill="#cccccc">;</text>
+
+  <text x="465" y="255" font-family="monospace" font-size="11" fill="#ff5f56">-</text>
+  <text x="480" y="255" font-family="monospace" font-size="11" fill="#cccccc">import { validatePhone } from</text>
+  <text x="755" y="255" font-family="monospace" font-size="11" fill="#ce9178">'./utils/validators'</text>
+  <text x="932" y="255" font-family="monospace" font-size="11" fill="#cccccc">;</text>
+
+  <text x="465" y="280" font-family="monospace" font-size="11" fill="#ff5f56">-</text>
+  <text x="480" y="280" font-family="monospace" font-size="11" fill="#cccccc">import { formatDate } from</text>
+  <text x="730" y="280" font-family="monospace" font-size="11" fill="#ce9178">'./utils/formatters'</text>
+  <text x="907" y="280" font-family="monospace" font-size="11" fill="#cccccc">;</text>
+
+  <text x="465" y="305" font-family="monospace" font-size="11" fill="#ff5f56">-</text>
+
+  <text x="465" y="330" font-family="monospace" font-size="11" fill="#ff5f56">-</text>
+  <text x="480" y="330" font-family="monospace" font-size="11" fill="#6a9955">// Duplicate validation logic</text>
+
+  <!-- Added lines -->
+  <rect x="455" y="340" width="700" height="70" fill="#1f4d1f20"/>
+  <text x="465" y="360" font-family="monospace" font-size="11" fill="#10b981">+</text>
+  <text x="480" y="360" font-family="monospace" font-size="11" fill="#cccccc">import { validate, format } from</text>
+  <text x="795" y="360" font-family="monospace" font-size="11" fill="#ce9178">'./core/validate'</text>
+  <text x="955" y="360" font-family="monospace" font-size="11" fill="#cccccc">;</text>
+
+  <text x="465" y="385" font-family="monospace" font-size="11" fill="#10b981">+</text>
+
+  <text x="465" y="405" font-family="monospace" font-size="11" fill="#10b981">+</text>
+  <text x="480" y="405" font-family="monospace" font-size="11" fill="#6a9955">// Using shared validation utilities</text>
+
+  <!-- Context lines -->
+  <text x="470" y="435" font-family="monospace" font-size="11" fill="#cccccc">const handleSubmit = (event) => {</text>
+
+  <text x="480" y="460" font-family="monospace" font-size="11" fill="#cccccc">event.preventDefault();</text>
+
+  <!-- Replaced validation call -->
+  <rect x="455" y="470" width="700" height="25" fill="#4d1f1f20"/>
+  <text x="465" y="487" font-family="monospace" font-size="11" fill="#ff5f56">-</text>
+  <text x="480" y="487" font-family="monospace" font-size="11" fill="#c586c0">if</text>
+  <text x="505" y="487" font-family="monospace" font-size="11" fill="#cccccc">(!validateEmail(email)) {</text>
+
+  <rect x="455" y="495" width="700" height="25" fill="#1f4d1f20"/>
+  <text x="465" y="512" font-family="monospace" font-size="11" fill="#10b981">+</text>
+  <text x="480" y="512" font-family="monospace" font-size="11" fill="#c586c0">if</text>
+  <text x="505" y="512" font-family="monospace" font-size="11" fill="#cccccc">(!validate.email(email)) {</text>
+
+  <text x="485" y="540" font-family="monospace" font-size="11" fill="#c586c0">return</text>
+  <text x="540" y="540" font-family="monospace" font-size="11" fill="#cccccc">setError(</text>
+  <text x="630" y="540" font-family="monospace" font-size="11" fill="#ce9178">'Invalid email'</text>
+  <text x="760" y="540" font-family="monospace" font-size="11" fill="#cccccc">);</text>
+
+  <text x="480" y="565" font-family="monospace" font-size="11" fill="#cccccc">}</text>
+
+  <!-- Info box -->
+  <rect x="470" y="585" width="670" height="40" rx="6" fill="#2d2d30"/>
+  <text x="485" y="608" font-family="sans-serif" font-size="11" fill="#3b82f6">⚡ Net reduction: 184 lines removed, using shared utilities</text>
+
+  <!-- Progress indicator -->
+  <rect x="30" y="650" width="1140" height="6" rx="3" fill="#3a3a3a"/>
+  <rect x="30" y="650" width="684" height="6" rx="3" fill="#3b82f6"/>
+  <text x="550" y="668" font-family="sans-serif" font-size="11" fill="#858585">Step 3 of 5</text>
+</svg>

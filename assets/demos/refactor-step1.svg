@@ -1,0 +1,117 @@
+<svg width="1200" height="675" viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="675" fill="#1e1e1e"/>
+
+  <!-- Main Title -->
+  <text x="40" y="50" font-family="sans-serif" font-size="24" fill="#3b82f6" font-weight="bold">Step 1: Codebase Analysis</text>
+  <text x="40" y="80" font-family="sans-serif" font-size="14" fill="#858585">Agent scanning files and identifying patterns...</text>
+
+  <!-- File tree on left -->
+  <rect x="30" y="110" width="300" height="530" rx="12" fill="#252526" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="45" y="140" font-family="sans-serif" font-size="13" fill="#cccccc" font-weight="bold">📁 Project Structure</text>
+
+  <text x="45" y="170" font-family="monospace" font-size="11" fill="#858585">└─ src/</text>
+  <text x="55" y="190" font-family="monospace" font-size="11" fill="#858585">├─ utils/</text>
+  <text x="65" y="210" font-family="monospace" font-size="11" fill="#9cdcfe">│  ├─ helpers.js</text>
+  <circle cx="58" cy="206" r="3" fill="#ffa500"/>
+  <text x="65" y="230" font-family="monospace" font-size="11" fill="#9cdcfe">│  ├─ validators.js</text>
+  <circle cx="58" cy="226" r="3" fill="#ffa500"/>
+  <text x="65" y="250" font-family="monospace" font-size="11" fill="#9cdcfe">│  └─ formatters.js</text>
+  <circle cx="58" cy="246" r="3" fill="#ffa500"/>
+
+  <text x="55" y="270" font-family="monospace" font-size="11" fill="#858585">├─ components/</text>
+  <text x="65" y="290" font-family="monospace" font-size="11" fill="#9cdcfe">│  ├─ Form.js</text>
+  <circle cx="58" cy="286" r="3" fill="#ffa500"/>
+  <text x="65" y="310" font-family="monospace" font-size="11" fill="#9cdcfe">│  ├─ Button.js</text>
+  <circle cx="58" cy="306" r="3" fill="#ffa500"/>
+  <text x="65" y="330" font-family="monospace" font-size="11" fill="#cccccc">│  └─ Input.js</text>
+
+  <text x="55" y="350" font-family="monospace" font-size="11" fill="#858585">└─ services/</text>
+  <text x="65" y="370" font-family="monospace" font-size="11" fill="#9cdcfe">   ├─ api.js</text>
+  <circle cx="58" cy="366" r="3" fill="#ffa500"/>
+  <text x="65" y="390" font-family="monospace" font-size="11" fill="#9cdcfe">   └─ auth.js</text>
+  <circle cx="58" cy="386" r="3" fill="#ffa500"/>
+
+  <rect x="45" y="420" width="265" height="200" rx="8" fill="#1e1e1e" stroke="#ffa500" stroke-width="2"/>
+  <text x="60" y="445" font-family="sans-serif" font-size="12" fill="#ffa500" font-weight="bold">🔍 Analysis Results</text>
+  <text x="60" y="470" font-family="sans-serif" font-size="11" fill="#cccccc">Files scanned:</text>
+  <text x="180" y="470" font-family="sans-serif" font-size="11" fill="#3b82f6" font-weight="bold">47</text>
+  <text x="60" y="495" font-family="sans-serif" font-size="11" fill="#cccccc">Duplicate patterns:</text>
+  <text x="220" y="495" font-family="sans-serif" font-size="11" fill="#ff5f56" font-weight="bold">15</text>
+  <text x="60" y="520" font-family="sans-serif" font-size="11" fill="#cccccc">Code duplication:</text>
+  <text x="220" y="520" font-family="sans-serif" font-size="11" fill="#ff5f56" font-weight="bold">~40%</text>
+  <text x="60" y="545" font-family="sans-serif" font-size="11" fill="#cccccc">Files affected:</text>
+  <text x="180" y="545" font-family="sans-serif" font-size="11" fill="#ffa500" font-weight="bold">8</text>
+  <text x="60" y="585" font-family="sans-serif" font-size="10" fill="#10b981">✓ AST analysis complete</text>
+  <text x="60" y="605" font-family="sans-serif" font-size="10" fill="#10b981">✓ Dependency graph mapped</text>
+
+  <!-- Code comparison on right -->
+  <rect x="360" y="110" width="810" height="530" rx="12" fill="#252526" stroke="#3a3a3a" stroke-width="1"/>
+
+  <!-- Top code block -->
+  <rect x="375" y="130" width="780" height="240" rx="8" fill="#1e1e1e"/>
+  <text x="390" y="155" font-family="monospace" font-size="11" fill="#6a9955">// helpers.js - Duplicate Pattern #1</text>
+
+  <text x="390" y="180" font-family="monospace" font-size="12" fill="#569cd6">function</text>
+  <text x="465" y="180" font-family="monospace" font-size="12" fill="#dcdcaa">validateEmail</text>
+  <text x="575" y="180" font-family="monospace" font-size="12" fill="#cccccc">(email) {</text>
+
+  <text x="400" y="205" font-family="monospace" font-size="12" fill="#c586c0">if</text>
+  <text x="425" y="205" font-family="monospace" font-size="12" fill="#cccccc">(!email) {</text>
+  <text x="400" y="230" font-family="monospace" font-size="12" fill="#c586c0">return</text>
+  <text x="455" y="230" font-family="monospace" font-size="12" fill="#569cd6">false</text>
+  <text x="495" y="230" font-family="monospace" font-size="12" fill="#cccccc">;</text>
+  <text x="390" y="255" font-family="monospace" font-size="12" fill="#cccccc">}</text>
+  <text x="400" y="280" font-family="monospace" font-size="12" fill="#c586c0">if</text>
+  <text x="425" y="280" font-family="monospace" font-size="12" fill="#cccccc">(!email.includes(</text>
+  <text x="575" y="280" font-family="monospace" font-size="12" fill="#ce9178">'@'</text>
+  <text x="605" y="280" font-family="monospace" font-size="12" fill="#cccccc">)) {</text>
+  <text x="400" y="305" font-family="monospace" font-size="12" fill="#c586c0">return</text>
+  <text x="455" y="305" font-family="monospace" font-size="12" fill="#569cd6">false</text>
+  <text x="495" y="305" font-family="monospace" font-size="12" fill="#cccccc">;</text>
+  <text x="390" y="330" font-family="monospace" font-size="12" fill="#cccccc">}</text>
+  <text x="400" y="355" font-family="monospace" font-size="12" fill="#c586c0">return</text>
+  <text x="455" y="355" font-family="monospace" font-size="12" fill="#569cd6">true</text>
+  <text x="495" y="355" font-family="monospace" font-size="12" fill="#cccccc">;</text>
+  <text x="390" y="380" font-family="monospace" font-size="12" fill="#cccccc">}</text>
+
+  <rect x="385" y="193" width="400" height="195" fill="none" stroke="#ffa500" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Bottom code block (similar pattern) -->
+  <text x="390" y="420" font-family="monospace" font-size="11" fill="#6a9955">// validators.js - Duplicate Pattern #2</text>
+
+  <text x="390" y="445" font-family="monospace" font-size="12" fill="#569cd6">function</text>
+  <text x="465" y="445" font-family="monospace" font-size="12" fill="#dcdcaa">validateUsername</text>
+  <text x="605" y="445" font-family="monospace" font-size="12" fill="#cccccc">(username) {</text>
+
+  <text x="400" y="470" font-family="monospace" font-size="12" fill="#c586c0">if</text>
+  <text x="425" y="470" font-family="monospace" font-size="12" fill="#cccccc">(!username) {</text>
+  <text x="400" y="495" font-family="monospace" font-size="12" fill="#c586c0">return</text>
+  <text x="455" y="495" font-family="monospace" font-size="12" fill="#569cd6">false</text>
+  <text x="495" y="495" font-family="monospace" font-size="12" fill="#cccccc">;</text>
+  <text x="390" y="520" font-family="monospace" font-size="12" fill="#cccccc">}</text>
+  <text x="400" y="545" font-family="monospace" font-size="12" fill="#c586c0">if</text>
+  <text x="425" y="545" font-family="monospace" font-size="12" fill="#cccccc">(username.length < 3) {</text>
+  <text x="400" y="570" font-family="monospace" font-size="12" fill="#c586c0">return</text>
+  <text x="455" y="570" font-family="monospace" font-size="12" fill="#569cd6">false</text>
+  <text x="495" y="570" font-family="monospace" font-size="12" fill="#cccccc">;</text>
+  <text x="390" y="595" font-family="monospace" font-size="12" fill="#cccccc">}</text>
+  <text x="400" y="620" font-family="monospace" font-size="12" fill="#c586c0">return</text>
+  <text x="455" y="620" font-family="monospace" font-size="12" fill="#569cd6">true</text>
+  <text x="495" y="620" font-family="monospace" font-size="12" fill="#cccccc">;</text>
+
+  <rect x="385" y="458" width="400" height="175" fill="none" stroke="#ffa500" stroke-width="2" stroke-dasharray="5,5"/>
+
+  <!-- Similarity indicator -->
+  <rect x="800" y="350" width="340" height="120" rx="8" fill="#2d2d30" stroke="#ffa500" stroke-width="2"/>
+  <text x="815" y="380" font-family="sans-serif" font-size="14" fill="#ffa500" font-weight="bold">⚠️ Similar Pattern Detected</text>
+  <text x="815" y="410" font-family="sans-serif" font-size="12" fill="#cccccc">Similarity:</text>
+  <text x="910" y="410" font-family="sans-serif" font-size="12" fill="#ff5f56" font-weight="bold">85%</text>
+  <text x="815" y="435" font-family="sans-serif" font-size="11" fill="#cccccc">Both use null checks and</text>
+  <text x="815" y="455" font-family="sans-serif" font-size="11" fill="#cccccc">early returns pattern</text>
+
+  <!-- Progress indicator -->
+  <rect x="30" y="650" width="1140" height="6" rx="3" fill="#3a3a3a"/>
+  <rect x="30" y="650" width="228" height="6" rx="3" fill="#3b82f6"/>
+  <text x="550" y="668" font-family="sans-serif" font-size="11" fill="#858585">Step 1 of 5</text>
+</svg>

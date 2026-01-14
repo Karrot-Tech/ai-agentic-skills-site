@@ -1,0 +1,63 @@
+<svg width="684" height="385" viewBox="0 0 684 385" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="684" height="385" fill="#1a1d29"/>
+
+  <!-- Terminal Header -->
+  <rect width="684" height="35" fill="#2d2d30"/>
+  <circle cx="15" cy="17" r="6" fill="#ff5f56"/>
+  <circle cx="35" cy="17" r="6" fill="#ffbd2e"/>
+  <circle cx="55" cy="17" r="6" fill="#27c93f"/>
+  <text x="80" y="23" font-family="monospace" font-size="12" fill="#cccccc">Terminal - Error Stack Trace</text>
+
+  <!-- Terminal content -->
+  <text x="15" y="65" font-family="monospace" font-size="11" fill="#f48771">Error: NullPointerException</text>
+
+  <text x="15" y="90" font-family="monospace" font-size="11" fill="#858585">at</text>
+  <text x="40" y="90" font-family="monospace" font-size="11" fill="#9cdcfe">processPayment</text>
+  <text x="145" y="90" font-family="monospace" font-size="11" fill="#858585">(checkout.js:</text>
+  <text x="260" y="90" font-family="monospace" font-size="11" fill="#ce9178">47</text>
+  <text x="275" y="90" font-family="monospace" font-size="11" fill="#858585">:12)</text>
+
+  <text x="15" y="110" font-family="monospace" font-size="11" fill="#858585">at</text>
+  <text x="40" y="110" font-family="monospace" font-size="11" fill="#9cdcfe">handleSubmit</text>
+  <text x="145" y="110" font-family="monospace" font-size="11" fill="#858585">(form.js:</text>
+  <text x="230" y="110" font-family="monospace" font-size="11" fill="#ce9178">89</text>
+  <text x="245" y="110" font-family="monospace" font-size="11" fill="#858585">:5)</text>
+
+  <text x="15" y="130" font-family="monospace" font-size="11" fill="#858585">at</text>
+  <text x="40" y="130" font-family="monospace" font-size="11" fill="#9cdcfe">onClick</text>
+  <text x="95" y="130" font-family="monospace" font-size="11" fill="#858585">(button.js:</text>
+  <text x="190" y="130" font-family="monospace" font-size="11" fill="#ce9178">23</text>
+  <text x="205" y="130" font-family="monospace" font-size="11" fill="#858585">:8)</text>
+
+  <!-- Highlight problematic line -->
+  <rect x="10" y="77" width="400" height="20" fill="#ff5f5620" stroke="#ff5f56" stroke-width="1"/>
+
+  <!-- Code snippet showing the error -->
+  <rect x="15" y="170" width="654" height="150" rx="8" fill="#252526" stroke="#3a3a3a" stroke-width="1"/>
+  <text x="30" y="195" font-family="monospace" font-size="11" fill="#6a9955">// checkout.js:47</text>
+  <text x="30" y="215" font-family="monospace" font-size="11" fill="#569cd6">function</text>
+  <text x="105" y="215" font-family="monospace" font-size="11" fill="#dcdcaa">processPayment</text>
+  <text x="215" y="215" font-family="monospace" font-size="11" fill="#cccccc">(order) {</text>
+
+  <text x="40" y="235" font-family="monospace" font-size="11" fill="#569cd6">const</text>
+  <text x="83" y="235" font-family="monospace" font-size="11" fill="#9cdcfe">amount</text>
+  <text x="135" y="235" font-family="monospace" font-size="11" fill="#cccccc">=</text>
+  <text x="148" y="235" font-family="monospace" font-size="11" fill="#9cdcfe">payment</text>
+  <text x="203" y="235" font-family="monospace" font-size="11" fill="#cccccc">.amount;</text>
+  <text x="270" y="235" font-family="monospace" font-size="11" fill="#ff5f56">// ← payment is null!</text>
+
+  <text x="40" y="255" font-family="monospace" font-size="11" fill="#c586c0">return</text>
+  <text x="90" y="255" font-family="monospace" font-size="11" fill="#dcdcaa">charge</text>
+  <text x="135" y="255" font-family="monospace" font-size="11" fill="#cccccc">(amount);</text>
+
+  <text x="30" y="275" font-family="monospace" font-size="11" fill="#cccccc">}</text>
+
+  <!-- Agent analysis box -->
+  <rect x="450" y="50" width="215" height="110" rx="8" fill="#2d2d30" stroke="#3b82f6" stroke-width="2"/>
+  <text x="465" y="75" font-family="sans-serif" font-size="12" fill="#3b82f6" font-weight="bold">🤖 Investigating Bug</text>
+  <text x="465" y="100" font-family="sans-serif" font-size="10" fill="#cccccc">Root cause:</text>
+  <text x="465" y="118" font-family="sans-serif" font-size="10" fill="#f48771">Payment object not</text>
+  <text x="465" y="133" font-family="sans-serif" font-size="10" fill="#f48771">initialized in checkout</text>
+  <text x="465" y="148" font-family="sans-serif" font-size="10" fill="#10b981">✓ Fix identified</text>
+</svg>
